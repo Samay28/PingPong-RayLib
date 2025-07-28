@@ -1,4 +1,5 @@
 #include <iostream>
+#include "ScoreManager.h"
 #pragma once
 
 class Ball
@@ -8,7 +9,9 @@ public:
 	int speedx, speedy;
 	int radius;
 
+
 	void Draw();
 	void Update();
+	void ResetBall();
 };
 
