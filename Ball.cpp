@@ -1,5 +1,6 @@
 #include "Ball.h"
 #include <iostream>
+#include "ScoreManager.h"
 #include <raylib.h>
 
 void Ball::Draw()
@@ -9,7 +10,10 @@ void Ball::Draw()
 }
 
 void Ball::Update()
-{
+{	
+	if (ScoreManager::Get().isGameOver)
+		return;
+
 	x += speedx;
 	y += speedy;
 
@@ -19,15 +23,20 @@ void Ball::Update()
 	}
 	if (x + radius >= GetScreenWidth())
 	{
-		ScoreManager::Get().AIScore++;
+		ScoreManager::Get().UpdateScoreline("AI");
 		
 		ResetBall();
 	}
 	if (x - radius <= 0)
 	{
-		ScoreManager::Get().PlayerScore++;
+		ScoreManager::Get().UpdateScoreline("Player");
 		ResetBall();
 	}
+
+	/*if (ScoreManager::Get().PlayerScore == 5 || ScoreManager::Get().AIScore == 5)
+	{
+		ScoreManager::Get().isGameOver = true;
+	}*/
 }
 
 void Ball::ResetBall()

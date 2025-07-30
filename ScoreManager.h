@@ -1,4 +1,7 @@
 #pragma once
+#include <iostream>
+#include <string>
+using namespace std;
 class ScoreManager
 {
 public:
@@ -6,8 +9,10 @@ public:
 	int AIScore ;
 
 	static ScoreManager& Get();
+	bool isGameOver;
 
 	void Initialize();
+	void UpdateScoreline(const string& Names);
 
 private:
 	ScoreManager() = default;
