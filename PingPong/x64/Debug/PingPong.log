@@ -1,16 +1,7 @@
-﻿  AIPaddle.cpp
-  Ball.cpp
-C:\Users\samay\Documents\GitHub\PingPong-RayLib\Ball.cpp(9,19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\samay\Documents\GitHub\PingPong-RayLib\Ball.cpp(9,16): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\samay\Documents\GitHub\PingPong-RayLib\Ball.cpp(9,13): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\samay\Documents\GitHub\PingPong-RayLib\Ball.cpp(44,23): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\samay\Documents\GitHub\PingPong-RayLib\Ball.cpp(45,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  main.cpp
+﻿  main.cpp
 C:\Users\samay\Documents\GitHub\PingPong-RayLib\main.cpp(50,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 C:\Users\samay\Documents\GitHub\PingPong-RayLib\main.cpp(53,86): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\samay\Documents\GitHub\PingPong-RayLib\main.cpp(57,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  ScoreManager.cpp
-  Generating Code...
   PingPong.vcxproj -> C:\Users\samay\Documents\GitHub\PingPong-RayLib\x64\Debug\PingPong.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

@@ -29,3 +29,10 @@ void ScoreManager::UpdateScoreline(const string& Name)
 	}
 
 }
+
+void ScoreManager::restartGame()
+{
+	isGameOver = false;
+	AIScore = 0;
+	PlayerScore = 0;
+}

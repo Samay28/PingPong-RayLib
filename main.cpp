@@ -69,7 +69,10 @@ int main()
 		DrawText(TextFormat("%i", ScoreManager::Get().AIScore), sw / 4 - 20, 20, 80, BLUE);
 		DrawText(TextFormat("%i", ScoreManager::Get().PlayerScore), 3 * sw / 4 - 20, 20, 80, RED);
 
-		
+		if (ScoreManager::Get().isGameOver && GetKeyPressed())
+		{
+			ScoreManager::Get().restartGame();
+		}
 			
 		EndDrawing();
 	}

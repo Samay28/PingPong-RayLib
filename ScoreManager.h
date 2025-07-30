@@ -13,6 +13,7 @@ public:
 
 	void Initialize();
 	void UpdateScoreline(const string& Names);
+	void restartGame();
 
 private:
 	ScoreManager() = default;
